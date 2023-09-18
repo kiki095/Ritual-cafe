@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book A Table | Morning Ritual Cafe</title>
+  <link rel="stylesheet" href="bookATable.css">
+  <link rel="stylesheet" href="bookATable.css">
+  <link rel="icon" type="image/x-icon" href="coffee-shop.png" />
+  <script src="https://kit.fontawesome.com/5289663089.js" crossorigin="anonymous"></script>
+  <script src="bookATable.js" defer></script>
+  <script src="bookATable.css" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+</head>
+
+<body>
+  <section class="header-img">
+    <header class="header">
+      <nav class="nav-main">
+        <h1 class="logo">Morning Ritual Cafe</h1>
+        </nav>
+    </header>
+  </section>
+
+
+
+    <div class="container">
+      <h2>Book A Table</h2>
+      <div class="reservation-details">
+        <p>Welcome to our Cafe! To ensure that you have the best dining experience, we highly recommend
+          making a reservation. Our reservation system is quick and easy - simply fill out the form below with your
+          preferred date and time, and we will confirm your booking via email or phone.</p>
+        <h2>Special Requests</h2>
+        <p>If you have any special requests, please let us know in advance. Our team will do their best to
+          accommodate your needs and ensure that you have a comfortable and enjoyable dining experience.</p>
+      </div>
+      <div class="table-container">
+        <form name="reservation-form">
+          <h2>Registration</h2>
+          <div class="content">
+            <div class="input-box">
+              <label for="name">Full Name</label>
+              <input type="text" placeholder="Enter full name" name="name" required>
+            </div>
+            <div class="input-box">
+              <label for="email">Email</label>
+              <input type="email" placeholder="Enter your email" name="email" required>
+            </div>
+            <div class="input-box">
+              <label for="phone">Phone Number</label>
+              <input type="tel" placeholder="Enter phone number" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="input-box">
+              <label for="date">Date</label>
+              <input type="date" placeholder="Enter Date" name="date" required>
+            </div>
+            <div class="input-box">
+              <label for="no-of-persons">Number Of Persons</label>
+              <input type="number" placeholder="Number Of Persons" min="1" max="10" name="no-of-persons" required>
+            </div>
+            <div class="input-box">
+              <label for="table">Table Number</label>
+              <select id="table" name="table" required>
+                <option value="table1">Table 1</option>
+                <option value="table2">Table 2</option>
+                <option value="table3">Table 3</option>
+                <option value="table4">Table 4</option>
+                <option value="table5">Table 5</option>
+                <option value="table6">Table 6</option>
+                <option value="table7">Table 7</option>
+                <option value="table8">Table 8</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label for="time">Timing</label>
+              <input type="time" placeholder="Enter phone number" name="time" required>
+            </div>
+          </div>
+          <div class="button-container">
+            <button type="submit" value="Reserve Seats" name="Reserve Seats"><a
+                href="https://food.grab.com/mm/en/?gclid=Cj0KCQjwxuCnBhDLARIsAB-cq1obCKygn4LIX-gTP_SQtYMxdbKuAaB73RgoF4kFTOZ7HkZ_MD2uwI8aAoGdEALw_wcB">Reserve
+                Seats</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>our branches</h3>
+            <a href="https://goo.gl/maps/uMGLuCbEWDxwP3gK8"><i class="fas fa-arrow-right"></i> Yangon</a>
+            <a href="https://goo.gl/maps/We52F8SnvjJscKMB6"><i class="fas fa-arrow-right"></i> Mandalay</a>
+            <a href="https://goo.gl/maps/8MVLcnn8e4by4QRa6"><i class="fas fa-arrow-right"></i> Nay pyi daw</a>
+            <a href="https://goo.gl/maps/cjLM1NTNDafwJgwr7"><i class="fas fa-arrow-right"></i> Taungyi</a>
+            <a href="https://goo.gl/maps/Gd1t1xMqwkVZXKgS6"><i class="fas fa-arrow-right"></i> Thailand</a>
+        </div>
+        <div class="box">
+            <h3>Contact info</h3>
+            <a href="https://contacts.google.com/"><i class="fas fa-phone"></i> +959 784 738 165</a>
+            <a href="https://contacts.google.com/"><i class="fas fa-phone"></i> +959 784 738 165</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope"></i> coffee@gmail.com</a>
+            <a href="https://goo.gl/maps/uMGLuCbEWDxwP3gK8"><i class="fas fa-envelope"></i> Myanmar, Yangon</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact info</h3>
+            <a href="https://www.facebook.com/profile.php?id=100023277822684"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://twitter.com/home"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/in/khant-nyar-322490270"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="https://youtube.com/@khantnyar760?si=fvYgvy2MdKchbSSk"><i class="fab fa-youtube"></i> Youtube</a>
+        </div>
+    </div>
+    <div class="credit"> by <i><a href="https://www.linkedin.com/in/khant-nyar-322490270">Mr. KiKi</a></i> Enjoy the coffee Guys</div>
+
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="cafe.js"></script>
+
+</body>
+
+</html>

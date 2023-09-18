@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --main-color: rgb(0, 0, 0);
+  --color: linear-gradient(to right, #96ecd2, #282828);
+  --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+  --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+  --border: 0.2rem solid var(--main-color);
+  --border-hover: 0.2rem dashed var(--main-color);
+  --border2: 0.2rem solid var(--color);
+  --border-hover2: 0.2rem dashed var(--color);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: fixed;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 2rem 10%;
+}
+body {
+  background-image: url(idol.gif);
+  background-size: cover;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f9f6f0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff9d2e;
+  border-radius: 4rem;
+}
+.heading {
+  font-size: 9rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 0.05rem var(--main-color);
+  letter-spacing: 0.2rem;
+  text-align: center;
+  pointer-events: none;
+  position: relative;
+}
+
+.heading span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: var(--main-color);
+  font-size: 3rem;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background-image: linear-gradient(to right, #1dc794, #5f49c2);
+  box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.1);
+  padding: 2rem 3%;
+}
+
+.header .logo {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+.header .logo i {
+  padding-right: 2.5rem;
+}
+
+.container h2 {
+  color: rgb(34, 111, 218);
+  padding: 8px;
+}
+.container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: justify;
+  text-indent: 20px;
+  padding: 10px;
+  background-image: linear-gradient(to right, #1dc794, #5f49c2);
+  border-radius: 9px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.container {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+p {
+  font-size: 2rem;
+  color: rgb(249, 0, 0);
+  background-image: url(white.jpg);
+}
+h1 {
+  font-size: 5rem;
+  color: rgb(0, 0, 0);
+  left: 30px;
+}
+h2 {
+  margin-top: 7rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.reservation-details {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.7px;
+  line-height: 1.7rem;
+}
+.table-container {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #1dc794, #5f49c2);
+  padding: 1em;
+  margin-bottom: 2em;
+  box-shadow: 1px 1px 4px black;
+}
+.table-container h2 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  margin: 16px 14px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.input-box {
+  width: 48%;
+  margin-bottom: 1em;
+}
+.input-box label {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.input-box input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  outline: none;
+}
+.button-container {
+  margin-top: 1em;
+  text-align: center;
+}
+.button-container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #ffffff, #fefefe);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button-container button:hover {
+  background-image: linear-gradient(to right, #30bd8c, #248ea9);
+  border-radius: var(--border-radius-hover);
+  border: var(--border-hover);
+}
+@media screen and (max-width: 600px) {
+  .container {
+    min-width: 200px;
+  }
+  .reservation-details {
+    padding: 1em;
+  }
+  .input-box {
+    width: 100%;
+  }
+  .table-container {
+    margin: 2em 1em;
+  }
+}
+footer {
+  background-image: url(white.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-color: transparent;
+}
+.section .footer{
+  background-color: rgb(0, 0, 0);
+}
+.section.footer .box-container {
+  background-color: rgb(0, 0, 0);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 1rem;
+  background-image: url(white.jpg);
+}
+
+.footer .box-container .box h3 {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  color: var(--main-color);
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1rem;
+  padding: 1rem 0;
+  color: var(--main-color);
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: rgb(11, 232, 209);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+  color: rgb(11, 232, 209);
+}
+
+.footer .credit {
+  text-align: center;
+  font-size: 1rem;
+  padding: 2rem 2rem;
+  margin-top: 1rem;
+  color: var(--main-color);
+  background-image: url(white.jpg);
+}
+
+.footer .credit span {
+  color: rgb(11, 232, 209);
+  border-bottom: var(--border-hover);
+}
