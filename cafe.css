@@ -3,9 +3,9 @@
   --main-color: rgb(124, 247, 148);
   --color: rgb(87, 178, 243);
   --border-radius: 86% 24% 97% 25% / 4% 67% 3% 95%;
-  --border-radius-hover: 39% 15% 16% 31% / 15% 22% 92% 15%;
+  --border-radius-hover: 65% 3% 20% 1% / 45% 92% 72% 45%;
   --border: 0.2rem solid var(--main-color);
-  --border-hover: 0.2rem dashed var(--main-color);
+  --border-hover: 0.5rem dashed var(--main-color);
   --border2: 0.2rem solid var(--color);
   --border-hover2: 0.2rem dashed var(--color);
 }
@@ -308,7 +308,7 @@ section {
 }
 
 .menu .box-container .box {
-  flex: 1 1 42rem;
+  flex: 1 1 32rem;
   background-color: rgb(236, 241, 241);
   padding: 2rem;
   border: var(--border);
